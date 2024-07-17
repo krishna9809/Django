@@ -1,44 +1,26 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swagmeandyou</title>
-    <style>
-        *{
-           margin: 0;
-           padding: 0;
-           box-sizing: border-box;
-        }
-        .wrapper{
-            height: 100vh;
-            width: 100%;
-            background-color: rgb(92, 56, 63);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-            
-        }
+    <link rel="stylesheet" href="{% static 'cool/CSS/swagmeandyou.css' %}">
+    <link rel="stylesheet" href="{% static 'cool/CSS/common.css' %}">
 
-        .box{
-            height: 350px;
-            width: 350px;
-            border-radius: 50%;
-            box-shadow: 10px 20px black;
-            background-color: rgb(156, 112, 53);
-            color: #000000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
 </head>
 <body>
     <div class="wrapper">
+        <img src="{% static '/cool/Image/common.jpg'%}" alt="">
+
     <div class="box">
        <h1>Swag me and you Hai</h1>
+       <img src="{% static '/cool/Image/swagMeAndYou.jpg'%}" alt="image">
+
     </div>
     </div>
+    <script src="{% static 'cool/JS/common.js' %}"></script>
+    <script src="{% static 'cool/JS/swagmeandyou.js' %}"></script>
+
 </body>
 </html>

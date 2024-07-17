@@ -1,0 +1,1 @@
+alert("This is Common JS ooho");
