@@ -6,6 +6,7 @@ from custom.views import *
 urlpatterns = [
 
     path('', home),
+    path('form/', form),
     path('custom/', Filter),
     path('swag/',swag),
     path('swag/me/',swagme),
